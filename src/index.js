@@ -1,15 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Footer from '../src/components/Footer/footer'
-import About_Nft from '../src/components/about-NFT/aboutnft'
+import App from './App';
 
 
 ReactDOM.render(
- <>
-    <About_Nft/>
-    <Footer/>
+  <>
+    
+    <App/>
     
     </>,
-  document.getElementById('root')
+ 
+  document.getElementById('root')  
 );
 
+ 
