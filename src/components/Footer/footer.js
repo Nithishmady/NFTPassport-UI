@@ -16,7 +16,7 @@ const Footer=()=> {
                                 <ul>
                                     <li>
                                         <a className="navbar-brand " href="# "/>
-                                        <img  src="assets/images/NFT Passport..svg" />
+                                        <img  src="assets/images/section-13/NFT Passport..svg" />
                                         {/* <Image src="/assets/images/logo.svg" className="Change_logo" alt="logo" /> */}
                                     </li>
                                     <li>
@@ -24,10 +24,10 @@ const Footer=()=> {
                                     </li>
                                     
                                     <div className="logo d-flex mt-4 mb-5 ">
-                                        <img src="assets\images\Telegram (1).svg"/>
-                                        <img src="assets\images\Discord.svg " alt=" " className="pl-5 " style={{paddingLeft:"20px"}}/>
-                                        <img src="assets\images\Vector (5).svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
-                                        <img src="assets\images\Github.svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
+                                        <img src="assets/images/section-13/Telegram (1).svg"/>
+                                        <img src="assets/images/section-13/Discord.svg " alt=" " className="pl-5 " style={{paddingLeft:"20px"}}/>
+                                        <img src="assets/images/section-13/Vector (5).svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
+                                        <img src="assets/images/section-13/Github.svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
                                     </div>
                                 </ul>
                             </div>
@@ -124,18 +124,15 @@ const Footer=()=> {
                 </div>
                 <div className="findus col-12 "style={{width:"25%"}}> 
                     <h6 className="d-inline ">Find Us On</h6>
-                    <img src="assets\images\Telegram.svg " alt=" " className="pl-3" style={{paddingLeft:"15px"}}/>
-                    <img src="assets\images\Discord.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
-                    <img src="assets\images\Twitter.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
-                    <img src="assets\images\Github.svg " alt=" " className="pl-3 "  style={{paddingLeft:"15px"}}/>
+                    <img src="assets/images/section-13/Telegram.svg " alt=" " className="pl-3" style={{paddingLeft:"15px"}}/>
+                    <img src="assets/images/section-13/Discord.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
+                    <img src="assets/images/section-13/Twitter.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
+                    <img src="assets/images/section-13/Github.svg " alt=" " className="pl-3 "  style={{paddingLeft:"15px"}}/>
                 
                 </div>
                 </div>
                 </div>
             </div>
-            
-            
-
 </section>
 
   );
