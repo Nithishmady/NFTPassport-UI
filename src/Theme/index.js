@@ -7,12 +7,14 @@ let ThemeComponent = createTheme({
           light: '#8B93A7',
           main: '#3f50b5',
           dark: 'black',
-          contrastText: '#fff',
+          contrastText: '#FFFFFF',
+          lightgray:'#EFF2F7',
+          lightblue:'#7073BE'
         },
         secondary: {
           light: '#ff7961',
           main: '#f44336',
-          dark: '#ba000d',
+          dark: '#19233C', //darkblue
           contrastText: '#000',
         },
     },

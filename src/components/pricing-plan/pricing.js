@@ -1,75 +1,42 @@
 import React from 'react';
 import { makeStyles } from '@mui/styles';
-import { Card, Container, ListItemSecondaryAction} from '@mui/material';
+import { Button, Card, CardContent, Container} from '@mui/material';
 import Typography from '@mui/material/Typography';
-
-
-
-
-
-  function Listinfo(props){
-    return <li> {props}</li>;
+import UseSwitchesBasic from '../style-components/switch-component';
+import cards from './card-properties';
+import { FaCheckCircle } from "react-icons/fa";
+import CardContentComponent from './cardContent';
+import PricingHeader from './pricingHeader';
+import { Box } from '@mui/material';
+const useStyles=makeStyles((theme)=>({ 
+  header:{
+   display:'flex',
+   justifyContent:'space-around',
+   margin:'auto',
+   [theme.breakpoints.between('xs','sm')]:{
+    display:'flex',
+    flexDirection:'column',
+    marginBottom:20,
   }
-
+}
+}));
 
  const PricingContent=()=>{
-
-  let card=[
-     {
-       HeaderContent:{  
-         title:"Team" ,
-         subtitle:"most",
-         price:"100$",
-         month:12                
-       },
-       information:[
-         "user account",
-         "user account",
-         "user account",
-         "user account",
-         "user acc",
-       ]
-    },
-    {
-      HeaderContent:{  
-        title:"Team2" ,
-        subtitle:"most",
-        price:"100$",
-        month:12                
-      },
-      information:[
-        "user account",
-        "user account",
-        "user account",
-        "user account",
-        "user account",
-      ]
-   }
-  ];
-
-
+  const classes=useStyles();
+  
   return(
+    <section style={{background:'#EFF2F7',paddingTop:'50px',paddingBottom:'50px'}}>
    <Container>
-   <h1>NithishKumar</h1>
-   {card.map((item,index)=>{
-     return(
-       <>
-           <h1>{item.HeaderContent.title}</h1>
-           <ul>
-           <Listinfo key={index}> {item.information }</Listinfo>
-           </ul>
-           {/* <ul>
-             <li>{item.information.findIndex(1)}</li>
-           </ul> */}
-           <button>hdg</button>
-           </>
+   <PricingHeader/>
+   <Box className={classes.header}>
+   {cards.map((item)=>{
+     return(        
+      <CardContentComponent item={item} />
      )
    })}
+   </Box>
    </Container>
- 
-
+   </section>
   )
-
-
 }
 export default PricingContent

@@ -1,6 +1,15 @@
 import React from 'react'
 import '../Footer/footer.css'
 import 'bootstrap/dist/css/bootstrap.css'; 
+import NFT from '../images/section-13/NFT Passport..svg'
+import Telegrame_1 from '../images/section-13/Telegram (1).svg'
+import Discord from '../images/section-13/Discord.svg'
+import Vector  from '../images/section-13/Vector.svg'
+import Github  from '../images/section-13/Github.svg'
+import Twitter  from '../images/section-13/Twitter.svg'
+import Telegram  from '../images/section-13/Telegram.svg'
+
+
 
 const Footer=()=> {
   return (
@@ -16,7 +25,7 @@ const Footer=()=> {
                                 <ul>
                                     <li>
                                         <a className="navbar-brand " href="# "/>
-                                        <img  src="assets/images/section-13/NFT Passport..svg" />
+                                        <img  src={NFT} />
                                         {/* <Image src="/assets/images/logo.svg" className="Change_logo" alt="logo" /> */}
                                     </li>
                                     <li>
@@ -24,10 +33,10 @@ const Footer=()=> {
                                     </li>
                                     
                                     <div className="logo d-flex mt-4 mb-5 ">
-                                        <img src="assets/images/section-13/Telegram (1).svg"/>
-                                        <img src="assets/images/section-13/Discord.svg " alt=" " className="pl-5 " style={{paddingLeft:"20px"}}/>
-                                        <img src="assets/images/section-13/Vector (5).svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
-                                        <img src="assets/images/section-13/Github.svg " alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
+                                        <img src={Telegrame_1}/>
+                                        <img src={Discord}    alt=" " className="pl-5 " style={{paddingLeft:"20px"}}/>
+                                        <img src={Vector}    alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
+                                        <img src={Github}   alt=" " className="pl-5 "style={{paddingLeft:"20px"}}/>
                                     </div>
                                 </ul>
                             </div>
@@ -124,10 +133,10 @@ const Footer=()=> {
                 </div>
                 <div className="findus col-12 "style={{width:"25%"}}> 
                     <h6 className="d-inline ">Find Us On</h6>
-                    <img src="assets/images/section-13/Telegram.svg " alt=" " className="pl-3" style={{paddingLeft:"15px"}}/>
-                    <img src="assets/images/section-13/Discord.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
-                    <img src="assets/images/section-13/Twitter.svg " alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
-                    <img src="assets/images/section-13/Github.svg " alt=" " className="pl-3 "  style={{paddingLeft:"15px"}}/>
+                    <img src={Telegram} alt=" " className="pl-3" style={{paddingLeft:"15px"}}/>
+                    <img src={Discord} alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
+                    <img src={Twitter} alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>
+                    <img src={Github} alt=" " className="pl-3 "  style={{paddingLeft:"15px"}}/>
                 
                 </div>
                 </div>

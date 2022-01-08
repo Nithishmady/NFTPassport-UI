@@ -27,7 +27,7 @@ const useStyles=makeStyles((theme)=>({
        flexDirection:"row",
        flex:1,
        justifyContent:"space-around",
-       alignItems:"center",
+       alignItems:"flex-start",
        [theme.breakpoints.down('sm')]:{
          flex:1,
          flexDirection:"column-reverse"
@@ -50,7 +50,7 @@ const useStyles=makeStyles((theme)=>({
    }
     
   }))
- const Cloneabout=()=>{
+ const Section4=()=>{
      const classes=useStyles()
      const matches = useMediaQuery('(max-width:414px)');
      console.log(matches,"m")
@@ -70,7 +70,7 @@ const useStyles=makeStyles((theme)=>({
  </Container>
 )
 }
-export default Cloneabout;
+export default Section4;
 
 
 
