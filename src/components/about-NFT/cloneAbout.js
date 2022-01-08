@@ -16,7 +16,9 @@ const useStyles=makeStyles((theme)=>({
        flex:1,
        justifyContent:"center",
        alignItems:"center",
-       height:"100vh",
+       height:"fit-content",
+       marginTop:"100px",
+       marginBottom:"120px",
        [theme.breakpoints.down('sm')]:{
          marginTop:"100px",
          marginBottom:"120px"

@@ -1,6 +1,14 @@
 import React from 'react'
 import { Container,Typography } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import star from '../images/section-9/star.svg'
+import analyse from '../images/section-9/analyse.svg'
+import Compound from '../images/section-9/Compound Path.svg'
+import Vector from '../images/section-9/Vector (6).svg'
+
+
+
+
 
 const useStyles=makeStyles((theme)=>({
     mainContainer:{
@@ -156,25 +164,25 @@ paddingTop:30
       <div class className={classes.Wrapper_class} >
             <div className={classes.box_1}>
                {/* <div> {images}</div> */}
-                <div> <img src='images/section-9/star.svg'className={classes.images} /></div>
+                <div> <img src={star} className={classes.images} /></div>
                 <div> <h6>BRANDING IDENDITY</h6>
                  <p className={classes.para}>Our support team will get assistance from AI-powered.</p></div>
             </div>
             <div className={classes.box_2} >
-            <div><img src='images/section-9/Vector (6).svg' className={classes.images} /></div>
+            <div><img src={Vector} className={classes.images} /></div>
             <div>
             <h6>BRANDING CONSULT</h6>
                  <p className={classes.para}>Our support team will get assistance from AI-powered.</p></div>
             </div>
    
             <div  className={classes.box_3} >
-           <div> <img src='images/section-9/Compound Path.svg' className={classes.images} /></div>
+           <div> <img src={Compound} className={classes.images} /></div>
             <div> <h6>WEB DEVELOPMENT</h6>
                  <p className={classes.para}>Our support team will get assistance from AI-powered.</p>
                  </div>
             </div>
             <div className={classes.box_4} >
-           <div> <img src='images/section-9/analyse.svg' className={classes.images} /></div>
+           <div> <img src={analyse} className={classes.images} /></div>
             <div> <h6>MARKET ANLYSIS</h6>
                  <p className={classes.para}>Our support team will get assistance from AI-powered.</p></div>
             </div>

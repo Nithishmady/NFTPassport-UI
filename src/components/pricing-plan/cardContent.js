@@ -3,6 +3,7 @@ import { Button, Card, Container} from '@mui/material';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
 import Box from '@mui/material/Box';
+import CheckCircleOutlineTwoToneIcon from '@mui/icons-material/CheckCircleOutlineTwoTone';
 
 
 const useStyles=makeStyles((theme)=>({ 
@@ -56,7 +57,7 @@ const useStyles=makeStyles((theme)=>({
     },
     lables:{
        lineHeight:2.4,
-       color:theme.palette.primary.light
+       color:theme.palette.primary.dark
     },
     listitems:{
       display:'flex',
@@ -71,7 +72,7 @@ const useStyles=makeStyles((theme)=>({
 function CardContentComponent({item}){
     const classes = useStyles()
     return (
-        <Card className={classes.card_spacing} style={{ backgroundColor:item.backgroundColor,height:item.height} }  > 
+        <Card className={classes.card_spacing} style={{ backgroundColor:item.backgroundColor,height:item.height,color:item.color} }  > 
         <Box className={classes.changecard}>
         <Box className={classes.Headerlist}>
         <Box>
@@ -86,8 +87,8 @@ function CardContentComponent({item}){
         <hr/>
         {item.information.map((item,index)=>{
               return(
-               <Box className={classes.listitems} style={{}}>
-               <lable className={classes.lables}>{item.key}</lable>
+               <Box className={classes.listitems}>
+               <lable className={classes.lables}><CheckCircleOutlineTwoToneIcon style={{ color: "	#00008B" }}/> {item.key}</lable>
              </Box>
               )
             })}

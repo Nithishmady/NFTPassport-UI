@@ -1,13 +1,12 @@
 import React from 'react';
 import ThemeComponent from '../../Theme';
 
-
-
 let cards=[
    
     {
       backgroundColor:'#19233C',
       height:'fit-content',
+      color:'white',
       HeaderContent:{  
         type:'Team_1',
         title:"Team" ,

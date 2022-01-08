@@ -131,10 +131,7 @@ return (
  <Container className={classes.main}>
      <Box className={classes.Content}>
      <Box className={classes.Picture_lists}>
-         <h1 className={classes.headcontent}>
-         At Besnik, we put our product, clients and culture first.
-             
-         </h1>
+         
          <img src={Cryptopunk} className={classes.crypto}/>
          <img src={Mutantclub} className={classes.mutant}/>
          <img src={BlackBored} className={classes.Bored }/>

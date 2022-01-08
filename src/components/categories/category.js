@@ -2,20 +2,20 @@ import React from 'react';
 import {  makeStyles } from '@mui/styles'
 import { Container,Card, Typography,Button } from '@mui/material';
 import Box from '@mui/material/Box';
-import GlassMen1 from '../images/section-6/Ellipse 1.svg'
-import GlassMen2 from '../images/section-6/Ellipse 2.svg'
-import GlassMen3 from '../images/section-6/Ellipse 3.svg'
-import GlassMen4 from '../images/section-6/Ellipse 4.svg'
-import GlassMen5 from '../images/section-6/Ellipse 5.svg'
-import GlassMen6 from '../images/section-6/Ellipse 6.svg'
-import GlassMen7 from '../images/section-6/Ellipse 7.svg'
-import GlassMen8 from '../images/section-6/Ellipse 8.svg'
-import GlassMen9 from '../images/section-6/Ellipse 9.svg'
-import GlassMen10 from '../images/section-6/Ellipse 10.svg'
-import GlassMen11 from '../images/section-6/Ellipse 11.svg'
-import GlassMen12 from '../images/section-6/Ellipse 12.svg'
+import GlassMen1 from '../images/section-5/Ellipse 1.svg'
+import GlassMen2 from '../images/section-5/Ellipse 2.svg'
+import GlassMen3 from '../images/section-5/Ellipse 3.svg'
+import GlassMen4 from '../images/section-5/Ellipse 4.svg'
+import GlassMen5 from '../images/section-5/Ellipse 5.svg'
+import GlassMen6 from '../images/section-5/Ellipse 6.svg'
+import GlassMen7 from '../images/section-5/Ellipse 7.svg'
+import GlassMen8 from '../images/section-5/Ellipse 8.svg'
+import GlassMen9 from '../images/section-5/Ellipse 9.svg'
+import GlassMen10 from '../images/section-5/Ellipse 10.svg'
+import GlassMen11 from '../images/section-5/Ellipse 11.svg'
+import GlassMen12 from '../images/section-5/Ellipse 12.svg'
 // import Icon1 from "material-ui/icons"
-// import ChevronRightIcon from '@mui/icons-material/ChevronRight';
+import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 
 // import { SvgIcon } from "@material-ui/core";
 
@@ -88,7 +88,7 @@ const list=[
       headinginfo:{
            image:GlassMen1,
            content:'Cryptopunks',
-        //    icon:ChevronRightIcon
+     
 
       },
      
@@ -198,6 +198,8 @@ const Categories_list=()=>{
                        <div className={classes.list_boxes}>
                   <img  className={classes.images}  src={item.headinginfo.image} ></img>
                   <h6 className={classes.taghead}>{item.headinginfo.content}</h6>
+
+                  <div> <ChevronRightIcon /> </div>
                   {/* <SvgIcon component={item.icon} className="whateverclassyouwant"/>  */}
                   </div>
                   )

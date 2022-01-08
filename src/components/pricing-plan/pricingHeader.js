@@ -6,6 +6,7 @@ import UseSwitchesBasic from '../style-components/switch-component';
 import cards from './card-properties';
 import { FaCheckCircle } from "react-icons/fa";
 import CardContentComponent from './cardContent';
+import Save from '../images/section-11/Save.svg'
 
 
 
@@ -41,7 +42,7 @@ const useStyles=makeStyles((theme)=>({
           <Typography>  permonth &nbsp;&nbsp; </Typography>
           <UseSwitchesBasic/>
           <Typography> &nbsp;&nbsp;peryear </Typography>
-          <img src='images/section-11/Save.svg'></img>
+          <img src={Save}></img>
            {/* <FaCheckCircle/> */}
           </div> 
           </>
