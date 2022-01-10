@@ -16,7 +16,9 @@ const useStyles=makeStyles((theme)=>({
        flex:1,
        justifyContent:"center",
        alignItems:"center",
-       height:"100vh",
+       height:"fit-content",
+       marginTop:"100px",
+       marginBottom:"120px",
        [theme.breakpoints.down('sm')]:{
          marginTop:"100px",
          marginBottom:"120px"
@@ -46,7 +48,10 @@ const useStyles=makeStyles((theme)=>({
     [theme.breakpoints.down('sm')]:{
         display:"flex",
         flex:1,
-      }
+      },
+      [theme.breakpoints.between('sm','md')]:{
+        flex:0.6 
+       },
    }
     
   }))

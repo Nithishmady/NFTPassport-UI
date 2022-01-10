@@ -15,7 +15,8 @@ const useStyles=makeStyles((theme)=>({
        flex:1,
        [theme.breakpoints.up('sm')]:{
          marginLeft:"80px"
-       }
+       },
+     
    },
    title:{
        fontSize:"44px",
@@ -23,6 +24,9 @@ const useStyles=makeStyles((theme)=>({
        color:"#19233C",
        [theme.breakpoints.down('sm')]:{
          textAlign:"center"
+        },
+        [theme.breakpoints.between('sm','md')]:{
+          fontSize:"28px"
         }
    },
    subTitle:{
@@ -31,7 +35,8 @@ const useStyles=makeStyles((theme)=>({
        fontWeight:"600",
        [theme.breakpoints.down('sm')]:{
         textAlign:"center"
-       }
+       },
+      
    },
    Content:{
        display:'flex',
@@ -43,18 +48,22 @@ const useStyles=makeStyles((theme)=>({
        marginTop:"20px",
        [theme.breakpoints.down('sm')]:{
         margin:"15px"
-    }
+      },
+      [theme.breakpoints.between('sm','md')]:{
+        margin:"5px",
+        width:"100% !important"
+      },
+      
    },
    mobileUsed:{
        [theme.breakpoints.down('sm')]:{
            background:"#FAFBFD",
-       }
+       },
    },
    subContent:{
     display:'flex',
-    flex:1,
     flexDirection:"column",
-    
+
    },
    subContentTitle:{
        color:"#19233C",
@@ -62,14 +71,21 @@ const useStyles=makeStyles((theme)=>({
        fontWeight:"700",
        [theme.breakpoints.down('sm')]:{
         fontSize:"18px"
-    }
+    },
+    [theme.breakpoints.between('sm','md')]:{
+        fontSize:"14px"
+      }
    },
+
    subContentSubTitle:{
        fontSize:"16px",
        fontWeight:"500",
        color:"#19233C",
        [theme.breakpoints.down('sm')]:{
          fontSize:"14px",
+      },
+      [theme.breakpoints.between('sm','md')]:{
+        fontSize:"12px"
       }
    },
    Image:{
@@ -97,8 +113,10 @@ function RightBox() {
                          <Image src={Icon3} className={classes.Image}></Image>
                      </Box>
                      <Box component="div" className={classes.subContent}>
+                       
                          <p className={classes.subContentTitle}>Onboard new age super rich</p>
-                         <p className={classes.subContentSubTitle}>Most efficent way of branding is onboad <br></br> super rich first, Like Apple and Tesla.</p>
+                         <p className={classes.subContentSubTitle}>Most efficent way of branding is onboad  super rich first, Like Apple and Tesla.</p>
+                      
                      </Box>
 
                </Box>
@@ -118,7 +136,7 @@ function RightBox() {
                      </Box>
                      <Box component="div" className={classes.subContent}>
                          <p className={classes.subContentTitle}>Unlimited integration</p>
-                         <p className={classes.subContentSubTitle}>Imagination is the limit. Integrate with <br></br>1000s of products and usecases.</p>
+                         <p className={classes.subContentSubTitle}>Imagination is the limit. Integrate with 1000s of products and usecases.</p>
                      </Box>
 
                </Box>

@@ -37,13 +37,18 @@ const useStyles=makeStyles((theme)=>({
          [theme.breakpoints.down('sm')]:{
            margin:"3%",
            paddingTop:"25px",
-        }
+        },
+        [theme.breakpoints.between('sm','md')]:{
+            margin:"0px",
+         },
+        
      },
      contentBox1:{
         display:"flex",
         flexDirection:"row",
         justifyContent:"flex-start",
         alignItems:"flex-start",
+        width:"95%",
         background:"white",
         margin:"5%",
         position:"relative",
@@ -51,10 +56,13 @@ const useStyles=makeStyles((theme)=>({
         padding:"20px 0px 0px 10px",
         boxShadow:"0px 50px 100px -30px rgba(0, 0, 0, 0.08);",
         borderRadius:"12px",
-        left:"60px",
+        left:"80px",
         [theme.breakpoints.between('sm',"md")]:{
-           left:"25px"
+           left:"25px",
         },
+        [theme.breakpoints.between('md',"lg")]:{
+            left:"20px",
+         },
         [theme.breakpoints.down('sm')]:{
           margin:"3%",
           left:"20px",
@@ -69,6 +77,9 @@ const useStyles=makeStyles((theme)=>({
             fontSize:"12.8px",
             color:"#19233C;",
             fontWeight:"700",
+        },
+        [theme.breakpoints.between('sm','md')]:{
+            fontSize:"12.8px",
         }
      },
      SpanTitle:{
@@ -79,6 +90,9 @@ const useStyles=makeStyles((theme)=>({
             fontSize:"12.8px",
             color:"#8B93A7",
             fontWeight:"600",
+        },
+        [theme.breakpoints.between('sm','md')]:{
+            fontSize:"12.8px",
         }
 
      },
@@ -90,7 +104,12 @@ const useStyles=makeStyles((theme)=>({
             fontSize:"12px",
             color:"#6D6D6D",
             fontWeight:"500",
-        }
+        },
+        [theme.breakpoints.between('sm','md')]:{
+            fontSize:"11.5px",
+            color:"#6D6D6D",
+            fontWeight:"500",
+        },
 
      },
     
