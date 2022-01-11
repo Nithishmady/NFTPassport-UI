@@ -21,8 +21,8 @@ const Footer=()=> {
                 <div className="col-xl col-lg col-md-4 col-sm-12">
                     <div className="footer-links col-xl col-xl ">
                         <div className="row">
-                            <div className="col-xl-7 col-lg-8 col-md-3 col-sm-3 col-5 ml-2 mx-md-0" style={{paddingLeft:0}}>
-                                <ul>
+                            <div className="col-xl-7 col-lg-8 col-md-3 col-sm-3 col-5 ml-2 mx-md-0" >
+                                <ul style={{paddingLeft:0}}>
                                     <li>
                                         <a className="navbar-brand " href="# "/>
                                         <img  src={NFT} />
@@ -122,7 +122,7 @@ const Footer=()=> {
         </div>
         <div className="newline ">
             <div className="footers row " style={{ marginTop:"20px",paddingLeft:"20px"}}>
-                <div className="TermsandCondition col-12 " style={{width:"75%",display:"flex"}}>
+                <div className="TermsandCondition col-12" style={{display:"flex"}}>
                     <h6 className="b1">Status</h6>
                     <h6 className="b2">Privacy</h6>
                     <h6 className="b3">Terms</h6>
@@ -131,7 +131,7 @@ const Footer=()=> {
                     <h6 className="b6">Contact Us </h6>
                     <h6 className="b7"> Change Region</h6>
                 </div>
-                <div className="findus col-12 "style={{width:"25%"}}> 
+                <div className="findus col-12 "> 
                     <h6 className="d-inline ">Find Us On</h6>
                     <img src={Telegram} alt=" " className="pl-3" style={{paddingLeft:"15px"}}/>
                     <img src={Discord} alt=" " className="pl-3 " style={{paddingLeft:"15px"}}/>

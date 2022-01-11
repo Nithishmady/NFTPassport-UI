@@ -7,6 +7,7 @@ import cards from './card-properties';
 import { FaCheckCircle } from "react-icons/fa";
 import CardContentComponent from './cardContent';
 import Save from '../images/section-11/Save.svg'
+import { Box } from '@mui/material';
 
 
 
@@ -30,6 +31,12 @@ const useStyles=makeStyles((theme)=>({
       alignItems:'center',
       margin:8
      },
+     saveimages:{
+       [theme.breakpoints.down('sm')]:{
+         width:65,
+         height:65
+       }
+     }
     
   }));
 
@@ -38,13 +45,12 @@ const useStyles=makeStyles((theme)=>({
     return(
         <>
         <h1 className={classes.choose}> Choose Your Pricing Plan</h1>
-        <div className={classes.sub_header}>
+        <Box className={classes.sub_header}>
           <Typography>  permonth &nbsp;&nbsp; </Typography>
           <UseSwitchesBasic/>
           <Typography> &nbsp;&nbsp;peryear </Typography>
-          <img src={Save}></img>
-           {/* <FaCheckCircle/> */}
-          </div> 
+          <img src={Save} className={classes.saveimages}></img>
+          </Box> 
           </>
 
     )

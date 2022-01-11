@@ -29,9 +29,9 @@ const useStyles=makeStyles((theme)=>({
    <Container>
    <PricingHeader/>
    <Box className={classes.header}>
-   {cards.map((item)=>{
+   {cards.map((item,index)=>{
      return(        
-      <CardContentComponent item={item} />
+      <CardContentComponent item={item} index={index} />
      )
    })}
    </Box>

@@ -5,8 +5,8 @@ let ThemeComponent = createTheme({
     palette: {
         primary: {
           light: '#8B93A7',
-          main: '#3f50b5',
-          dark: 'black',
+          main:  '#3f50b5',
+          dark:  'black',
           contrastText: '#FFFFFF',
           lightgray:'#EFF2F7',
           lightblue:'#7073BE'

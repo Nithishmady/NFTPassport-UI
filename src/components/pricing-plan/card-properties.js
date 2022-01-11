@@ -7,6 +7,7 @@ let cards=[
       backgroundColor:'#19233C',
       height:'fit-content',
       color:'white',
+      
       HeaderContent:{  
         type:'Team_1',
         title:"Team" ,
@@ -16,7 +17,9 @@ let cards=[
         
         
       },
+     
       information:[
+       
         {key:"user peraccount"},
         {key:"Registration form"},
         {key:"Unlimited events"},

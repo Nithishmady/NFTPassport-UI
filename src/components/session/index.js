@@ -16,10 +16,12 @@ const useStyles=makeStyles((theme)=>({
        flex:1,
        justifyContent:"center",
        alignItems:"center",
-       height:"100vh",
+       height:"fit-content",
+       marginTop:"100px",
+         marginBottom:"90px",
        [theme.breakpoints.down('sm')]:{
          marginTop:"100px",
-         marginBottom:"120px"
+         marginBottom:"20px"
       }
    },
    main:{
@@ -56,7 +58,7 @@ const useStyles=makeStyles((theme)=>({
      console.log(matches,"m")
      return(
  <Container>
-   <Box component="div" className={classes.root}>
+   <Box className={classes.root}>
        <Box component="div" className={classes.main}>
            <Box component="div" className={classes.LeftBox}>
               <LeftBox/>

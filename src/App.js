@@ -11,14 +11,21 @@ import Access_properties from './components/access-cards/accessDesign';
 import Categories_list from './components/categories/category';
 import { PictureContent } from './components/picture-page/picturePage';
 import Section4 from './components/session';
-
+import { Cirecle_paywall } from './components/Circle-page/Circle';
+import Section_3 from './components/section_3/section_3';
+import Section_2 from './components/section_2/section_2';
+import Section_1Component from './components/section_1/section_1';
 
 const App=()=> {
   return (
    <>
    <ThemeProvider theme={ThemeComponent} >
-     <PictureContent/>
+     <Section_1Component/>
+     <Section_2/>
+     <Section_3/>
+     <Cirecle_paywall/>
      <Categories_list/>
+     <PictureContent/>
      <Access_properties/>
      <Section4/>
      <Features/>
