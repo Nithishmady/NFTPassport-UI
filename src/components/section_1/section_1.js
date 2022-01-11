@@ -5,11 +5,16 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { height } from '@mui/system';
+import { FirstPageComponent } from './firstPage';
 
 const useStyles = makeStyles((theme)=>({
     Section_1:{
         height:"fit-content",
-        marginBottom:"10rem"
+        marginBottom:"10rem",
+
+        [theme.breakpoints.between('xs','sm')]:{
+            marginBottom:"6rem"
+        }
     },
 
     start_btn:{
@@ -23,23 +28,22 @@ const useStyles = makeStyles((theme)=>({
         [theme.breakpoints.between('md','lg')]:{
             width:"180px",
             height:"35px",
-            fontSize:"13px",
-            fontWeight:"600"
+            fontSize:"13px !important",
+            fontWeight:"600 !important"
         },
         [theme.breakpoints.between('sm','md')]:{
             width:"180px",
             height:"35px",
-            fontSize:"13px",
-            fontWeight:"600"
+            fontSize:"13px !important",
+            fontWeight:"600 !important"
         },
 
         [theme.breakpoints.between('xs','sm')]:{
             width:"175px",
             height:"35px",
-            fontWeight:"600",
-            fontSize:"13px",
-            marginTop:"1rem"
-            
+            fontWeight:"600 !important",
+            fontSize:"13px !important",
+            marginTop:"1rem" 
         }
     },
     text_on:{
@@ -82,6 +86,10 @@ const useStyles = makeStyles((theme)=>({
         flexDirection:"row",
         marginTop:"10rem",
         justifyContent:"space-between",
+
+        [theme.breakpoints.between('xs','sm')]:{
+            display:"none"
+         },
         
     },
     btn_row:{
@@ -134,11 +142,7 @@ const useStyles = makeStyles((theme)=>({
         },
 
         [theme.breakpoints.between('xs','sm')]:{
-            right:"0",
-            fontSize:"8px",
-            width:"4rem",
-            height:"1rem",
-            marginTop:"2rem",
+            display:"none"
          },
     },
     Loading_msg:{
@@ -225,8 +229,8 @@ const useStyles = makeStyles((theme)=>({
             height:"12px",  
         },
         [theme.breakpoints.between('xs','sm')]:{
-            height:"10px",
-        }
+            display:"none"
+         },
     },
     img_lines:{
         [theme.breakpoints.between('md','lg')]:{
@@ -238,9 +242,8 @@ const useStyles = makeStyles((theme)=>({
         },
 
         [theme.breakpoints.between('xs','sm')]:{
-            height:"20px",
-            marginTop:"2rem" 
-        }
+            display:"none"
+         },
     },
     para_sec:{
         display:"flex",
@@ -662,6 +665,9 @@ const Section_1Component = () => {
                   <Box className={classes.ENS_box}>ENS Domains</Box>
                   </Box>
               </Box>
+            </Box>
+            <Box component="div" style={{marginTop:"10px"}}>
+                <FirstPageComponent/>
             </Box>
             <Box className={classes.img_content}>
                 <Box className={classes.images_left}>

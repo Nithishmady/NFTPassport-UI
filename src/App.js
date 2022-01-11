@@ -15,11 +15,13 @@ import { Cirecle_paywall } from './components/Circle-page/Circle';
 import Section_3 from './components/section_3/section_3';
 import Section_2 from './components/section_2/section_2';
 import Section_1Component from './components/section_1/section_1';
+import HeaderComponent from './components/header_nav/header_nav/nav';
 
 const App=()=> {
   return (
    <>
    <ThemeProvider theme={ThemeComponent} >
+     <HeaderComponent/>
      <Section_1Component/>
      <Section_2/>
      <Section_3/>
