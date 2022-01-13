@@ -8,7 +8,7 @@ import { height } from '@mui/system';
 import { FirstPageComponent } from './firstPage';
 
 const useStyles = makeStyles((theme)=>({
-    Section_1:{
+    section_1:{
         height:"fit-content",
         marginBottom:"10rem",
 
@@ -642,26 +642,26 @@ const Section_1Component = () => {
 
 
     return (
-        <Container fixed className={classes.Section_1}>
+        <Container fixed className={classes.section_1}>
             <Box sx={{textAlign:"center"}}>
               <Box className={classes.head_sec}  sx={{ marginTop:"5rem",}}>
-                  <img className={classes.msg_img} src='./assets/images/Section_1/Message.svg'/>
+                  <img className={classes.msg_img} src='./assets/images/section_1/Message.svg'/>
                   <h1 className={classes.heading}>Access control based on user's<br className={classes.break}/> NFT holding, for anything.</h1>
               </Box>
               <Box className={classes.para_sec}  sx={{ marginTop:"1rem",}}>
                   <p className={classes.text_on}>NFT Passort dridiging the NFT with online, offline<br className={classes.break}/> and virtual world.</p>
-                  <img className={classes.S_img} src='./assets/images/Section_1/S-section1.svg'/>
+                  <img className={classes.S_img} src='./assets/images/section_1/S-section1.svg'/>
               </Box>
               <Box className={classes.btn_row}>
                   <Box className={classes.left_btn_img}>
-                      <img className={classes.Loading_msg} src='./assets/images/Section_1/Loading-msg.svg'/>
-                      <img className={classes.Arrow_orange} src='./assets/images/Section_1/Arrow-orange.svg'/>
+                      <img className={classes.Loading_msg} src='./assets/images/section_1/Loading-msg.svg'/>
+                      <img className={classes.Arrow_orange} src='./assets/images/section_1/Arrow-orange.svg'/>
                       <Box className={classes.Any_box}>Any NFT</Box>
                   </Box>
                   <Button className={classes.start_btn} variant="contained">Start integrate it</Button>
                   <Box className={classes.right_btn_img}>
-                      <img className={classes.img_lines} src='./assets/images/Section_1/Curved-lines.svg'/>
-                      <img className={classes.Arrow_purple} src='./assets/images/Section_1/Arrow-purple.svg'/>
+                      <img className={classes.img_lines} src='./assets/images/section_1/Curved-lines.svg'/>
+                      <img className={classes.Arrow_purple} src='./assets/images/section_1/Arrow-purple.svg'/>
                   <Box className={classes.ENS_box}>ENS Domains</Box>
                   </Box>
               </Box>
@@ -672,29 +672,29 @@ const Section_1Component = () => {
             <Box className={classes.img_content}>
                 <Box className={classes.images_left}>
                   <Box>
-                   <img className={classes.img_glasses} src='./assets/images/Section_1/Glasses.svg'/>
+                   <img className={classes.img_glasses} src='./assets/images/section_1/Glasses.svg'/>
                     <Box className={classes.glasses_text}>
                      <p className={classes.bill_glasses}>Hey Bill, nice to meet you!</p>
                      <p className={classes.hope_glasses}>Hope you're doing fine.</p>
                     </Box>
                   </Box>
                   <Box>
-                      <img className={classes.img_pyramid} src='./assets/images/Section_1/pyramid.svg'/>
+                      <img className={classes.img_pyramid} src='./assets/images/section_1/pyramid.svg'/>
                       <Box className={classes.pyramid_box}>
-                         <img className={classes.play_img} src='./assets/images/Section_1/play_btn.svg'/>
+                         <img className={classes.play_img} src='./assets/images/section_1/play_btn.svg'/>
                          <p className={classes.calls}>Video calls</p>
                       </Box>
                   </Box>
                 </Box>
                 <Box className={classes.images_right}>
                   <Box className={classes.img_ape_section}>
-                     <img className={classes.img_SkellyApe} src='./assets/images/Section_1/skelly-ape.svg'/>
+                     <img className={classes.img_SkellyApe} src='./assets/images/section_1/skelly-ape.svg'/>
                      <Box className={classes.ape_text}>I am fine,How are you?</Box>
                   </Box>
                   <Box className={classes.img_skeleton_section}>
-                     <img className={classes.img_Skeleton} src='./assets/images/Section_1/skeleton.svg'/>
+                     <img className={classes.img_Skeleton} src='./assets/images/section_1/skeleton.svg'/>
                      <Box className={classes.skelly_text}>  
-                         <img className={classes.img_list} src='./assets/images/Section_1/list.svg'/>
+                         <img className={classes.img_list} src='./assets/images/section_1/list.svg'/>
                          <p>News Feed</p>
                      </Box>
                   </Box>
