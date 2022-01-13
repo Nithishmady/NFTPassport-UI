@@ -13,6 +13,7 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import TextField from '@mui/material/TextField';
 import { width } from '@mui/system';
+import Background_lines from "../images/section_3 img/line.svg"
 import CloseIcon from '@mui/icons-material/Close';
 
 
@@ -333,8 +334,12 @@ left_box:{
     boxShadow: "0px 0px 74px rgba(189, 189, 189, 0.25)",
     left:"9%",
     borderRadius:"5px",
-
-    [theme.breakpoints.between('xs','lg')]:{
+    [theme.breakpoints.between('md','lg')]:{
+     width:"300px",
+     height:"100px",
+     padding:"1rem"
+    },
+    [theme.breakpoints.down('md')]:{
         height:"100px",
         width:"230px",
         padding:"1rem"
@@ -414,6 +419,15 @@ close:{
     right:"2%",
     top:"2%"
 },
+box1_bg1:{
+    display:"none",
+
+    [theme.breakpoints.between('xs','sm')]:{
+        display:"flex",
+        position:"absolute",
+        left:"0%",
+    }
+},
 Curve2:{
     marginLeft:"18rem",
     marginTop:"1.5rem",
@@ -428,6 +442,32 @@ Curve2:{
         height:"85px",
         marginTop:"0.5rem",
     },
+},
+Input:{
+  width:"185px",
+  border:" 0.5px solid #BABECB",
+  opacity:"0.4",
+  background:"#FDFDFD",
+  borderRadius:"3px",
+  height:"31px",
+   '&::placeholder':{
+       paddingLeft:"20px",
+       fontSize:"10px",
+       fontWeight:"500",
+       color:"black",
+   },
+   [theme.breakpoints.between('md','lg')]:{
+      width:"170px",
+   },
+   [theme.breakpoints.down('md')]:{
+      width:"110px" ,
+      '&::placeholder':{
+        paddingLeft:"6px",
+        fontSize:"7px",
+        fontWeight:"700",
+        color:"black",
+    },
+   }
 }
 
 
@@ -446,6 +486,7 @@ function Section_3() {
                 </Box>
                 <Box className={classes.top_right}>
                   <Image src={Image1} className={classes.box1_bg} />
+                  <Image src={Background_lines} className={classes.box1_bg1}  />
                   <Box className={classes.right_Box}>
                       <Box className={classes.right_contents}>
                          <Box className={classes.images}>
@@ -478,9 +519,13 @@ function Section_3() {
                      <Image src={Curve1} className={classes.curve1} />
                      <Box className={classes.left_box}>
                          <p className={classes.left_heading}>Share Workspace</p>
-                         <Box>
-                           <Box className={classes.textfiled}><p className={classes.textfiled_text}>https://share.ly/F!aDZjjKAK!q </p><Button variant="contained" className={classes.middle_button}>Copy link</Button></Box>
-                         </Box>
+                        <Box component="div" style={{display:"flex",flex:1,flexDirection:"row",position:"relative",left:"19px"}}>
+                              <input  placeholder='https://share.ly/F!aDZjjKAK!q' className={classes.Input}></input>
+                              <Box component="div" style={{width:"69px",height:"31px",background:"#7073BE",borderRadius:"3px",justifyContent:"center"}}>
+                                   <p style={{textAlign:"center",color:"#FDFDFD",fontSize:"10px",fontWeight:"600",position:"relative",top:"8px"}}>Copy Link</p>
+                              </Box>
+                        </Box>
+                      
                      </Box>
                   </Box>
                   <Box className={classes.middle_right}>

@@ -35,6 +35,7 @@ const App=()=> {
      <PricingContent/>
      <Cloneabout/>
      <Footer/>
+     {/* <Section4/> */}
  </ThemeProvider>
    </>
 

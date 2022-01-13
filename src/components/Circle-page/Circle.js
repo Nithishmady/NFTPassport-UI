@@ -44,6 +44,35 @@ const useStyles = makeStyles((theme) => ({
       height: 370,
     },
   },
+  boxContainer:{
+    display:"flex",
+    flex:1,
+    justifyContent:"flex-start",
+    position:"relative",
+  },
+  box:{
+    width:"192px",
+    height:"192px",
+    background:'#7073BE',
+    borderRadius:"50%",
+    position:"relative",
+    right:"125px",
+    top:"200px",
+    boxShadow:"23.7667px 28.4167px 58.9px rgba(112, 115, 190, 0.22)",
+    [theme.breakpoints.down('sm')]:{
+      top:"50px",
+      width:"80px",
+      height:"80px",
+      right:"50px"
+    }
+  },
+  root:{
+    position:"relative",
+    bottom:"100px",
+    [theme.breakpoints.between('sm','lg')]:{
+       bottom:"200px"
+    }
+  }
 }));
 
 export const Cirecle_paywall = () => {
@@ -55,7 +84,13 @@ export const Cirecle_paywall = () => {
     learnmore: "Learn more ",
   });
   return (
-    <Container>
+    <Box className={classes.root} > 
+      <Box component="div" className={classes.boxContainer}>
+          <Box conponent="div" className={classes.box}>
+            
+          </Box>
+      </Box>
+     <Container>
       <Box className={classes.whole_box}>
         <Box>
           <img src={Whole} className={classes.image_content} />
@@ -70,5 +105,6 @@ export const Cirecle_paywall = () => {
         </Box>
       </Box>
     </Container>
+    </Box>
   );
 };

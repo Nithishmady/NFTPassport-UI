@@ -6,9 +6,24 @@ import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { height } from '@mui/system';
 import { FirstPageComponent } from './firstPage';
+import Message from '../images/section_1/Message.svg';
+import Arrow_orange from '../images/section_1/Arrow-orange.svg';
+import Arrow_purple from '../images/section_1/Arrow-purple.svg';
+import Curved_lines from '../images/section_1/Curved-lines.svg';
+import Glasses from '../images/section_1/Glasses.svg';
+import List from '../images/section_1/List.svg';
+import Loading_msg from '../images/section_1/Loading-msg.svg';
+import play_btn from '../images/section_1/play_btn.svg';
+import S_section from '../images/section_1/S-section1.svg';
+import skeleton from '../images/section_1/skeleton.svg';
+import skelly_ape from '../images/section_1/skelly-ape.svg';
+import pyramid from '../images/section_1/pyramid.svg';
+
+
+
 
 const useStyles = makeStyles((theme)=>({
-    section_1:{
+    Section_1:{
         height:"fit-content",
         marginBottom:"10rem",
 
@@ -19,7 +34,7 @@ const useStyles = makeStyles((theme)=>({
 
     start_btn:{
         backgroundColor:"#7073BE !important",
-        borderRadius:"30px 0px 30px 30px !important" ,
+        borderRadius:"30px 0px 30px 30px !important",
         marginTop:"2rem",
         width:"230px",
         height:"55px",
@@ -44,6 +59,7 @@ const useStyles = makeStyles((theme)=>({
             fontWeight:"600 !important",
             fontSize:"13px !important",
             marginTop:"1rem" 
+            
         }
     },
     text_on:{
@@ -642,26 +658,26 @@ const Section_1Component = () => {
 
 
     return (
-        <Container fixed className={classes.section_1}>
+        <Container fixed className={classes.Section_1}>
             <Box sx={{textAlign:"center"}}>
               <Box className={classes.head_sec}  sx={{ marginTop:"5rem",}}>
-                  <img className={classes.msg_img} src='./assets/images/section_1/Message.svg'/>
+                  <img className={classes.msg_img} src={Message}/>
                   <h1 className={classes.heading}>Access control based on user's<br className={classes.break}/> NFT holding, for anything.</h1>
               </Box>
               <Box className={classes.para_sec}  sx={{ marginTop:"1rem",}}>
                   <p className={classes.text_on}>NFT Passort dridiging the NFT with online, offline<br className={classes.break}/> and virtual world.</p>
-                  <img className={classes.S_img} src='./assets/images/section_1/S-section1.svg'/>
+                  <img className={classes.S_img} src={S_section}/>
               </Box>
               <Box className={classes.btn_row}>
                   <Box className={classes.left_btn_img}>
-                      <img className={classes.Loading_msg} src='./assets/images/section_1/Loading-msg.svg'/>
-                      <img className={classes.Arrow_orange} src='./assets/images/section_1/Arrow-orange.svg'/>
+                      <img className={classes.Loading_msg} src={Loading_msg}/>
+                      <img className={classes.Arrow_orange} src={Arrow_orange}/>
                       <Box className={classes.Any_box}>Any NFT</Box>
                   </Box>
                   <Button className={classes.start_btn} variant="contained">Start integrate it</Button>
                   <Box className={classes.right_btn_img}>
-                      <img className={classes.img_lines} src='./assets/images/section_1/Curved-lines.svg'/>
-                      <img className={classes.Arrow_purple} src='./assets/images/section_1/Arrow-purple.svg'/>
+                      <img className={classes.img_lines} src={Curved_lines}/>
+                      <img className={classes.Arrow_purple} src={Arrow_purple}/>
                   <Box className={classes.ENS_box}>ENS Domains</Box>
                   </Box>
               </Box>
@@ -672,29 +688,29 @@ const Section_1Component = () => {
             <Box className={classes.img_content}>
                 <Box className={classes.images_left}>
                   <Box>
-                   <img className={classes.img_glasses} src='./assets/images/section_1/Glasses.svg'/>
+                   <img className={classes.img_glasses} src={Glasses}/>
                     <Box className={classes.glasses_text}>
                      <p className={classes.bill_glasses}>Hey Bill, nice to meet you!</p>
                      <p className={classes.hope_glasses}>Hope you're doing fine.</p>
                     </Box>
                   </Box>
                   <Box>
-                      <img className={classes.img_pyramid} src='./assets/images/section_1/pyramid.svg'/>
+                      <img className={classes.img_pyramid} src={pyramid}/>
                       <Box className={classes.pyramid_box}>
-                         <img className={classes.play_img} src='./assets/images/section_1/play_btn.svg'/>
+                         <img className={classes.play_img} src={play_btn}/>
                          <p className={classes.calls}>Video calls</p>
                       </Box>
                   </Box>
                 </Box>
                 <Box className={classes.images_right}>
                   <Box className={classes.img_ape_section}>
-                     <img className={classes.img_SkellyApe} src='./assets/images/section_1/skelly-ape.svg'/>
+                     <img className={classes.img_SkellyApe} src={skelly_ape}/>
                      <Box className={classes.ape_text}>I am fine,How are you?</Box>
                   </Box>
                   <Box className={classes.img_skeleton_section}>
-                     <img className={classes.img_Skeleton} src='./assets/images/section_1/skeleton.svg'/>
+                     <img className={classes.img_Skeleton} src={skeleton}/>
                      <Box className={classes.skelly_text}>  
-                         <img className={classes.img_list} src='./assets/images/section_1/list.svg'/>
+                         <img className={classes.img_list} src={List}/>
                          <p>News Feed</p>
                      </Box>
                   </Box>
